@@ -1,123 +1,229 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
 
-    <Button
-        android:id="@+id/btn_normal"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Normal"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="59dp" />
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/normal_toast"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:columnCount="3"
+            android:layout_marginBottom="10dp"
+            android:rowCount="1">
 
 
-    <Button
-        android:id="@+id/btn_short"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Short"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_normal" />
+            <Button
+                android:id="@+id/btn_short"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:text="@string/short_toast"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_long"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Long"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_short" />
+            <Button
+                android:id="@+id/btn_long"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="@string/long_toast"
+                android:layout_margin="8dp"
+                android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_info"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Info"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_long" />
+            <Button
+                android:id="@+id/btn_custom"
+                android:layout_row="0"
+                android:layout_column="2"
+                android:text="@string/custom_toast"
+                android:layout_margin="8dp"
+                android:textAllCaps="false" />
 
 
-    <Button
-        android:id="@+id/btn_success"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Success"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_info" />
+        </GridLayout>
 
-    <Button
-        android:id="@+id/btn_warning"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Warning"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_success" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_short_toast"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
 
-    <Button
-        android:id="@+id/btn_error"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:text="Error"
-        android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_warning" />
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:layout_marginBottom="10dp"
+            android:rowCount="3">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btn_info_short"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="@string/info"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"/>
+
+
+            <Button
+                android:id="@+id/btn_success_short"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="@string/success"
+                android:layout_margin="8dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_warning_short"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:text="@string/warning"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_error_short"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="8dp"
+                android:text="@string/error"
+                android:textAllCaps="false" />
+
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_long_toast"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:rowCount="3">
+
+
+            <Button
+                android:id="@+id/btn_info_long"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="@string/info"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"/>
+
+
+            <Button
+                android:id="@+id/btn_success_long"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="@string/success"
+                android:layout_margin="8dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_warning_long"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:text="@string/warning"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_error_long"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="8dp"
+                android:text="@string/error"
+                android:textAllCaps="false" />
+
+
+        </GridLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_custom_toast"
+            android:textSize="18sp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="10dp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:columnCount="2"
+            android:rowCount="3">
+
+
+            <Button
+                android:id="@+id/btn_info_custom"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:text="@string/info"
+                android:textAllCaps="false"
+                android:layout_margin="8dp"/>
+
+
+            <Button
+                android:id="@+id/btn_success_custom"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:text="@string/success"
+                android:layout_margin="8dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_warning_custom"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:layout_margin="8dp"
+                android:text="@string/warning"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/btn_error_custom"
+                android:layout_row="1"
+                android:layout_column="1"
+                android:layout_margin="8dp"
+                android:text="@string/error"
+                android:textAllCaps="false" />
+
+
+        </GridLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">ToastUtils</string>
+
+    <string name="normal_toast">---------- Normal Toast----------</string>
+    <string name="icon_short_toast">---------- Icon &amp; Short Toast----------</string>
+    <string name="icon_long_toast">---------- Icon &amp; Long Toast----------</string>
+    <string name="icon_custom_toast">---------- Icon &amp; Custom Toast----------</string>
+
+    <string name="short_toast">Short</string>
+    <string name="long_toast">Long</string>
+    <string name="custom_toast">Custom</string>
+
+    <string name="info">Info</string>
+    <string name="success">Success</string>
+    <string name="warning">Warning</string>
+    <string name="error">Error</string>
+
 </resources>
