@@ -18,9 +18,9 @@
 
 <img src="https://gitlab.com/manimaran/toastutils/raw/master/files/info.png" data-canonical-src="https://gitlab.com/manimaran/toastutils/raw/master/files/info.png" width="400" height="100" />
 
-<img src="https://gitlab.com/manimaran/toastutils/raw/master/files/success.png" data-canonical-src="https://gitlab.com/manimaran/toastutils/raw/master/files/success.png" width="400" height="100" />
-
 <br>
+
+<img src="https://gitlab.com/manimaran/toastutils/raw/master/files/success.png" data-canonical-src="https://gitlab.com/manimaran/toastutils/raw/master/files/success.png" width="400" height="100" />
 
 <img src="https://gitlab.com/manimaran/toastutils/raw/master/files/warning.png" data-canonical-src="https://gitlab.com/manimaran/toastutils/raw/master/files/warning.png" width="400" height="100" />
 
@@ -42,8 +42,8 @@
 2. Add the dependency
 
 ```xml
-	dependencies {
-	        implementation 'com.gitlab.manimaran:toastutils:v1.0'
+    dependencies {
+        implementation 'com.gitlab.manimaran:toastutils:v1.0'
 	}
 ```
 
