@@ -5,6 +5,7 @@
 *  Each Toast have diffrent color and icon.
 *  Simple and Easy to Use
 
+**Demo App** - [Click here](https://gitlab.com/manimaran/toast_utils/raw/master/files/toast_utils_demo.apk)
 
 ### Screen Shots
 
